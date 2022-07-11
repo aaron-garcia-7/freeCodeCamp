@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page | freeCodeCamp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/Blindr_2.0_white.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <a href="#" id="toTop"><i id="upArrow" class="fa-solid fa-angle-up"></i></a>
+    <header id="header" class="header">
+        <a class="logoLink" href="./index.html">
+        <div class="logo">
+            <img src="./images/Blindr_2.0.svg" alt="Blindr Logo" id="header-img">
+            <p id="logoText">Blindr</p>
+        </div>
+        </a>
+        <nav id="nav-bar">
+            <a href="#featuresDiv" class="nav-link">Our Tech.</a>
+            <a href="#optionsDiv" class="nav-link">Prices</a>
+            <a href="#invite" class="nav-link">Subscribe</a>
+        </nav>
+    </header>
+    <section id="landingSection">
+        <img id="heroImg" src="./images/heroImg.png" alt="">
+        <div id="heroTextDiv">
+            <h2 id="heroText">A New Era of <br id="titleBreak"> Window Blinds</h2>
+            <div class="ctaBtns">
+                <a href="#optionsDiv" id="ctaBtn">Get Quote</a>
+                <a href="#featuresDiv" id="ctaBtn2">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section id="featuresDiv">
+            <h3 id="featuresTitle">Premium Features</h3>
+            <div id="allFeatures">
+                <div class="feature feature1">
+                    <img class="icon" src="./images/mats.svg" alt="">
+                    <h3>Quality Materials</h3>
+                    <p>Made from choice mahogany, slick to the touch. Elegant and timeless.</p>
+                    <br>
+                    <p class="readMore">Read More</p>
+                </div>
+                <div class="feature feature2">
+                    <img class="icon" src="./images/ai.svg" alt="">
+                    <h3>Machine Learning</h3>
+                    <p>Clever AI powered by our revolutionary industry-leading Br3 chip. Just wow.</p>
+                    <br>
+                    <p class="readMore">Read More</p>
+                </div>
+                <div class="feature feature3">
+                    <img class="icon" src="./images/wand.svg" alt="">
+                    <h3>Upgraded Tilt Wand</h3>
+                    <p>Redesigned to maximize durability and allow a new level of precision.</p>
+                    <br>
+                    <p class="readMore">Read More</p>
+                </div>
+            </div>
+        </section>
+        <section id="videoDiv">
+            <iframe id="video" src="https://www.youtube.com/embed/Hv6EMd8dlQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <iframe id="video" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </section>
+        <section id="optionsDiv">
+            <h3 id="optionsTitle">Promoted Models</h3>
+            <div id="allOptions">
+                <div class="option option1">
+                    <img class="optionImg" src="./images/blinds.png" alt="">
+                    <div class="colorDemo color1"></div>
+                    <h3>Ivory White</h3>
+                    <p>A cool finish, to show power and resiliance.</p>
+                    <br>
+                    <p class="select">Starting at $549 per window</p>
+                </div>
+                <div class="option option2">
+                    <img class="optionImg" src="./images/blinds.png" alt="">
+                    <div class="colorDemo color2"></div>
+                    <h3>Navajo White</h3>
+                    <p>A warm finish, welcoming and inviting.</p>
+                    <br>
+                    <p class="select">Starting at $599 per window</p>
+                </div>
+                <div class="option option3">
+                    <img class="optionImg" src="./images/blinds.png" alt="">
+                    <div class="colorDemo color3"></div>
+                    <h3>Offwhite White</h3>
+                    <p>A modern finish, to bring out your artistic side.</p>
+                    <br>
+                    <p class="select">Starting at $699 per window</p>
+                </div>
+            </div>
+        </section>
+        <section id="invite">
+            <div id="subscribe">
+                <h4>Subscribe for special offers</h4>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" name="email" id="email" placeholder="Enter email here" required>
+                    <input type="submit" id="submit" >
+                </form>
+            </div>
+            <div id="social">
+                <h4>Follow us for updates</h4>
+                <ul class="socialLinks">
+                    <li class="socialMedia">Facebook</li>
+                    <li class="socialMedia">Instagram</li>
+                    <li class="socialMedia">Twitter</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <p class="fineText">This website is for educational purposes. Visit <a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp.com</a> to learn more.</p>
+        <br>
+        <p class="fineText">Website designed and build by Aaron Garcia. Fictional company "Blindr" and video by <a href="https://www.youtube.com/c/JomaOppa" target="_blank">Joma Tech</a>.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js" integrity="sha512-gWlyRVDsJvp5kesJt4cSdPPLZIBdln/uSwzYgUicQcbTgRNQE4QhP5KUBIYlLYLkiKIQiuD7KUMHzqGNW/D2bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js" integrity="sha512-K7WgwKJAJIRoRV8yDALsY4+CZhsWKk0gVFotVxC2RzCRyoEVyWH1DRDjxw2DdBKdZdBMPr4cacHbYbNco9wOvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>

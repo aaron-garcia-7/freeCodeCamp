@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage | freeCodeCamp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="burger">
+        <div class="burgerLine"></div>
+        <div class="burgerLine"></div>
+        <div class="burgerLine"></div>
+    </div>
+    <div class="menuSlider"></div>
+    <aside id="navbar">
+        <ul id="sideNavList">
+            <li class="navbarListItem"><a href="#" class="sideNavLink linkHome"><i class="fa-solid fa-house"></i><p class="sideLinkText sideLinkText1">home</p></a></li>
+            <li class="navbarListItem"><a href="#about" class="sideNavLink linkAbout"><i class="fa-solid fa-user"></i><p class="sideLinkText sideLinkText2">about</p></a></li>
+            <li class="navbarListItem"><a href="#services" class="sideNavLink linkServices"><i class="fa-solid fa-hand-holding-heart"></i><p class="sideLinkText sideLinkText3">services</p></a></li>
+            <li class="navbarListItem"><a href="#resume" class="sideNavLink linkResume"><i class="fa-solid fa-file"></i><p class="sideLinkText sideLinkText4">resume</p></a></li>
+            <li class="navbarListItem"><a href="#portfolio" class="sideNavLink linkPortfolio"><i class="fa-solid fa-suitcase"></i><p class="sideLinkText sideLinkText5">portfolio</p></a></li>
+            <li class="navbarListItem"><a href="#contact" class="sideNavLink linkContact"><i class="fa-solid fa-envelope"></i><p class="sideLinkText sideLinkText6">contact</p></a></li>
+        </ul>
+    </aside>
+    <div id="toTop">
+        <a href="#"><i id="upArrow" class="fa-solid fa-up-long"></i></a>
+    </div>
+    <section id="welcome-section">
+        <!-- <h1>As per User Story #2, you might need this here to meet the requirements.</h1> -->
+        <div class="heroText">
+            <h1 id="myName">Aaron Garcia</h1>
+            <h2 id="titleChange"></h2>
+            <ul id="socialList">
+                <li class="socialIcon"><a href="https://twitter.com/aaron_garcia_7" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="socialIcon"><a href="https://dribbble.com/aaron_garcia_7" target="_blank"><i class="fa-brands fa-dribbble"></i></a></li>
+                <li class="socialIcon"><a href="https://instagram.com/aaron_garcia_7" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="socialIcon"><a href="https://www.linkedin.com/in/aaron-garcia-3b7081211/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <div id="mainContent">
+        <section id="about">
+            <header class="sectionHeader">
+                <h2 class="sectionTitle">About</h2>
+                <p class="sectionDescription">Hey there! I'm Aaron, a front-end web developer with a passion for UX design! Working with technology is my dream, so when I'm off the job I'm usually still hard at work to expand my own skill set, i.e. in-depth study of programming languages, keeping up to date on UX design principles, or seeking inspiration from different design platforms. In my freetime I enjoy the company of my family and friends, gaming, studying Spanish, practicing piano, or writing.</p>
+            </header>
+            <main class="sectionContent">
+                <img id="aboutImg" src="./images/profile-img.jpg" alt="Picture of Aaron Garcia smiling.">
+                <div class="innerContent">
+                    <header class="innerHeader">
+                        <h3>Web Developer & UX Designer</h3>
+                        <p>I'm ecstatic about building gorgeous, responsive, and fast websites of all kinds! From larger scale business websites to single page landing sites. Let's get to work!</p>
+                    </header>
+                    <div id="personalDetails">
+                        <p class="detail">DOB: <span class="thinText">March 1, 1995</span></p>
+                        <p class="detail">Age: <span class="thinText">26</span></p>
+                        <p class="detail">Phone: <a href="tel:3852274287" class="detailLink">(385) 227-4287</a></p>
+                        <p class="detail">Email: <a href="mailto:aaronegarcia1@gmail.com" class="detailLink">aaronegarcia1@gmail.com</a></p>
+                        <p class="detail">Location: <span class="thinText">Salt Lake City, UT</span></p>
+                        <p class="detail">Freelance: <span class="thinText">Available</span></p>
+                    </div>
+                    <p id="bio">My story as a web developer/UX designer began in the fall of 2020 when I stumbled upon far too many dated websites with choppy designs. The idea of helping these businesses, big and small, sparked and my desire to contribute to the field grew. Not long after, in the spring of 2021 I quit my full-time job as an insurance agent to pursue this dream. I was thrilled to see a great demand for developers and began devoting all of my time learning and attaining the skills needed to become a front-end developer. Now I'm so excited to work with you and bring your dream project/business to life with a beautiful, user-friendly, and responsive website.</p>
+                </div>
+            </main>
+        </section>
+        <section id="skills">
+            <header class="sectionHeader">
+                <h2 id="skillsTitle" class="sectionTitle">Skills</h2>
+                <p class="sectionDescription">These stats give a general idea of my skill level with certain programming languages and software. It also lists other programs I use frequently in my work. For convenience I only included the more common/popular languages I use.</p>
+            </header>
+            <main class="sectionContent">
+                <div id="skillGraph">
+                    <div class="skillset">
+                        <span class="skillText">HTML <i class="skillPercent">90%</i></span>
+                        <div class="skillBar">
+                            <div class="bar bar1"></div>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <span class="skillText">CSS / SASS <i class="skillPercent">85%</i></span>
+                        <div class="skillBar">
+                            <div class="bar bar2"></div>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <span class="skillText">JavaScript <i class="skillPercent">75%</i></span>
+                        <div class="skillBar">
+                            <div class="bar bar3"></div>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <span class="skillText">React / Redux <i class="skillPercent">80%</i></span>
+                        <div class="skillBar">
+                            <div class="bar bar4"></div>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <span class="skillText">Git <i class="skillPercent">90%</i></span>
+                        <div class="skillBar">
+                            <div class="bar bar5"></div>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <span class="skillText">Figma <i class="skillPercent">75%</i></span>
+                        <div class="skillBar">
+                            <div class="bar bar6"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <section id="services">
+            <header class="sectionHeader">
+                <h2 class="sectionTitle">Services</h2>
+                <p class="sectionDescription">In the field of digital marketing, your business needs a tech savy creative artist. This is where I come in! I offer a wide range of services, all of which are focused on helping your business grow. From web developement to user experience design, I'm always keeping up to date on best practices.</p>
+            </header>
+            <main class="sectionContent">
+                <div class="servicesContainer">
+                    <div class="serviceCard card1">
+                        <div class="serviceImgDiv">
+                            <i class="fa-solid fa-code serviceImg"></i>
+                        </div>
+                        <h3 class="serviceName">Web Development</h3>
+                        <p class="serviceDescription">Need a website? That's why I'm here. Whether it's big or small, I always welcome a challenge. I love designing and applying microinteractions that capture your users' attention. I'm determined to provide visually appealing websites that are fast, responsive to any device or screen, and accessible for many different people.</p>
+                    </div>
+                    <div class="serviceCard card2">
+                        <div class="serviceImgDiv">
+                            <i class="fa-solid fa-user-check serviceImg"></i>                    
+                        </div>
+                        <h3 class="serviceName">UX Design</h3>
+                        <p class="serviceDescription">Everything I do revolves around the audience your businesses attracts. User Experience design is all about ensuring your clients have an enjoyable, useful, and equitable experience when handling your products or services, and that's exactly what I deliver.</p>
+                    </div>
+                    <div class="serviceCard card3">
+                        <div class="serviceImgDiv">
+                            <i class="fa-solid fa-palette serviceImg"></i>
+                        </div>
+                        <h3 class="serviceName">Graphic Design</h3>
+                        <p class="serviceDescription">Probably one of the most creative skill sets needed in the world today; graphic design is an art that mixes emotion and logic. Brand consistency is a key element for any business that cares to maintain their identity to their customers, especially across different platforms.</p>
+                    </div>
+                    <div class="serviceCard card4">
+                        <div class="serviceImgDiv">
+                            <i class="fa-solid fa-magnifying-glass serviceImg"></i>                    
+                        </div>
+                        <h3 class="serviceName">SEO Specialization</h3>
+                        <p class="serviceDescription">In the world today, your business needs a strong and welcoming online presence. Search engine optimization is the focus of discoverability to your audience across the internet and where your business stands in a search engine feed. With my help, it'll be toward the top.</p>
+                    </div>
+                    <div class="serviceCard card5">
+                        <div class="serviceImgDiv">
+                            <i class="fa-solid fa-hashtag serviceImg"></i>                    
+                        </div>
+                        <h3 class="serviceName">Social Media Strategy</h3>
+                        <p class="serviceDescription">An excellent tool in marketing is using social media to your advantage. The vast majority of people today, and especially the younger generation are actively engaged with different social media platforms. Being familiar with them and their business options gives you an edge over your competitors.</p>
+                    </div>
+                    <div class="serviceCard card6">
+                        <div class="serviceImgDiv">
+                            <i class="fa-solid fa-lock serviceImg"></i>
+                        </div>
+                        <h3 class="serviceName">Site Security</h3>
+                        <p class="serviceDescription">One of the first things many people may notice about a website is whether or not it's secure. Security and peace of mind are inviting qualities when visiting a website and if you want to gain the confidence of those you serve, you'll want to make sure any private data is well protected.</p>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <section id="resume">
+            <header class="sectionHeader">
+                <h2 id="resumeTitle" class="sectionTitle">Resume</h2>
+                <p class="sectionDescription">Innovative and deadline-driven front-end developer seeking opportunities to share my talents. I'm focused on designing and developing user-centered digital experiences from the initial concept to a polished final product. I'm also dedicated to continuing my education behind the scenes. The idea that there is always more to learn or perhaps a more efficient approach is a standard that I live by. The content below summarizes my education history and background with programming. It also lists my work history and professional experience.</p>
+            </header>
+            <main class="sectionContent resumeContent">
+                <div id="education">
+                    <h3 class="blockTitle"><i class="fa-solid fa-graduation-cap blockImg"></i> Education</h3>
+                    <div class="segment">
+                        <h4 class="segmentTitle">Back-End Development and APIs Certification</h4>
+                        <h5 class="segmentDate"><i class="fa-regular fa-calendar-days calendarImg"></i>July 2022 - September 2022</h5>
+                        <h5 class="segmentSource">freeCodeCamp.org</h5>
+                        <p class="segmentDescription">The cirriculum (300 hours) covers server-side interations using Node.js and Node Package Manager (npm). It also teaches MongoDB and the Mongoose library. It also includes a variety of projects to practice and demonstrate the material learned.</p>
+                    </div>
+                    <div class="segment">
+                        <h4 class="segmentTitle">Data Visualization Certification</h4>
+                        <h5 class="segmentDate"><i class="fa-regular fa-calendar-days calendarImg"></i>May 2022 - July 2022</h5>
+                        <h5 class="segmentSource">freeCodeCamp.org</h5>
+                        <p class="segmentDescription">The cirriculum (300 hours) teaches about data charts, graphs, and maps using the D3.js library. It also go in depth into JSON and intoduces APIs. It also includes a variety of projects to practice and demonstrate the material learned.</p>
+                    </div>
+                    <div class="segment">
+                        <h4 class="segmentTitle">Front-End Development Libraries Certification</h4>
+                        <h5 class="segmentDate"><i class="fa-regular fa-calendar-days calendarImg"></i>March 2022 - May 2022</h5>
+                        <h5 class="segmentSource">freeCodeCamp.org</h5>
+                        <p class="segmentDescription">The cirriculum (300 hours) covers bootstrap, JQuery, SASS, React, and Redux. It also includes a variety of projects to practice and demonstrate the material learned.</p>
+                    </div>
+                    <div class="segment">
+                        <h4 class="segmentTitle">JavaScript Algorithms and Data Structure Certification</h4>
+                        <h5 class="segmentDate"><i class="fa-regular fa-calendar-days calendarImg"></i>September 2021 - March 2022</h5>
+                        <h5 class="segmentSource">freeCodeCamp.org</h5>
+                        <p class="segmentDescription">The cirriculum (300 hours) teaches JS basics, such as working with arryas, objects, functions, loops, if/else statements and more. It covers ES6 features, regex, debugging, data structures, algorithm scripting, object oriented programming, functional programming, and includes a variety of projects to demonstrate and test skills.<p>
+                    </div>
+                    <div class="segment">
+                        <h4 class="segmentTitle">Responsive Web Design Certification</h4>
+                        <h5 class="segmentDate"><i class="fa-regular fa-calendar-days calendarImg"></i>June 2021 - September 2021</h5>
+                        <h5 class="segmentSource">freeCodeCamp.org</h5>
+                        <p class="segmentDescription">The cirriculum (300 hours) teaches HTML & HTML5, CSS3, and visual design elements. It also covers accessiblity, responsive design principles and includes a variety of projects to demonstrate skills.</p>
+                    </div>
+                    <div class="segment">
+                        <h4 class="segmentTitle">Google UX Design Professional Certification</h4>
+                        <h5 class="segmentDate"><i class="fa-regular fa-calendar-days calendarImg"></i>May 2021 - June 2021</h5>
+                        <h5 class="segmentSource">coursera.org</h5>
+                        <p class="segmentDescription">The cirriculum covered the key elements of user expierience design and how to think like a designer. It emphasizes the importance of accessibility, itendifying user pain points, and provided projects to excercise these principles.</p>
+                    </div>
+                </div>
+                <div id="profExp">
+                    <h3 class="blockTitle"><i class="fa-solid fa-user-tie blockImg"></i> Professional Experience</h3>
+                    <div class="segment">
+                        <h4 class="segmentTitle">Front-End Designer & Developer</h4>
+                        <h5 class="segmentDate"><i class="fa-regular fa-calendar-days calendarImg"></i>October 2021 - Current</h5>
+                        <h5 class="segmentSource"><a href="https://honeysuckle-studios.com" class="detailLink" target="_blank">honeysuckle-studios.com</a></h5>
+                        <ul class="segmentUL">
+                            <li class="segmentLI">Consulted with business owner to identify business goals and the needs of the target audience (clientele). Reviewed the current website and designed mock up templates that simplified the design and user experience. From there we filtered down to the final design for the website.</li>
+                            <li class="segmentLI">Using plain HTML, CSS, and JavaScript, I developed the website, incorporating the key elements from the original design. With the assistance of <a href="https://kjohnsonstudios.com" target="_blank" class="detailLink">Kyle Johnson Studios</a> the website is hosted and live for interaction.</li>
+                            <li class="segmentLI">Developed different marketing logos and graphics for the business(logos, instagram story icons,infographics, and advertisements as seen on honeysuckle studio's instagram).</li>
+                        </ul>
+                    </div>
+                    <div class="segment">
+                        <h4 class="segmentTitle">Interaction Designer & Web Developer</h4>
+                        <h5 class="segmentDate"><i class="fa-regular fa-calendar-days calendarImg"></i>March 2022 - Current</h5>
+                        <h5 class="segmentSource">guitarlessonsutah.net</h5>
+                        <ul class="segmentUL">
+                            <li class="segmentLI">Consulted with business owner to identify business needs, goals, and the target audience (clientele). Reviewed the current website and designed mock up templates that simplified the design and user experience. From there we filtered down to the final design for the website.</li>
+                            <li class="segmentLI">Using HTML, CSS, and JavaScript, I developed the website, incorporating the key elements from the original design. With the assistance of Kyle Johnson Studios the website is hosted and live for interaction.</li>
+                            <li class="segmentLI">Developed different marketing logos and graphics for the business(logos, instagram story icons,infographics, and advertisements as seen on honeysuckle studio's instagram).</li>
+                        </ul>
+                    </div>
+                    <div class="segment">
+                        <h4 class="segmentTitle">User Experience/ Visual Designer</h4>
+                        <h5 class="segmentDate"><i class="fa-regular fa-calendar-days calendarImg"></i>April 2022 - Current</h5>
+                        <h5 class="segmentSource">bonniesdanceschool.com</h5>
+                        <ul class="segmentUL">
+                            <li class="segmentLI">Consulted with business owner to identify business needs, goals, and the target audience (clientele). Reviewed the current website and designed mock up templates that simplified the design and user experience. From there we filtered down to the final design for the website.</li>
+                            <li class="segmentLI">Using HTML, CSS, and JavaScript, I developed the website, incorporating the key elements from the original design. With the assistance of Kyle Johnson Studios the website is hosted and live for interaction.</li>
+                            <li class="segmentLI">Developed different marketing logos and graphics for the business(logos, instagram story icons,infographics, and advertisements as seen on honeysuckle studio's instagram).</li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <section id="portfolio">
+            <header class="sectionHeader">
+                <h2 id="portfolioTitle" class="sectionTitle">Portfolio</h2>
+                <p class="sectionDescription">Welcome to my portfolio. Feel free to look around and review some of the projects I've taken on over the last few months. Please notice that some projects are currently in the works but I've provided a sneak peak.</p>
+            </header>
+            <div id="projects">
+            <!-- <section id="projects"> THIS MAY NEED TO BE A SECTION ELEMENT USER STORY #3 </section> -->
+                <a href="https://honeysuckle-studios.com/" target="_blank" class="project-tile tile1">
+                    <img src="./portfolio/lashes.jpg" alt="A close up of eyelash extensions." class="projectImg">
+                    <div class="tileInfo info1">
+                        <h5 class="tileName">Honeysuckle Studios</h5>
+                        <p class="tileDescription">Click to visit</p>
+                    </div>
+                </a>
+                <a href="https://codepen.io/aaronegarcia1/pen/vYepoPK" target="_blank" class="project-tile tile2">
+                    <img src="./portfolio/tesla.jpg" alt="Tesla logo in silver." class="projectImg">
+                    <div class="tileInfo info2">
+                        <h5 class="tileName">Tesla Manual</h5>
+                        <p class="tileDescription">Click to visit</p>
+                    </div>
+                </a>
+                <a class="project-tile tile3">
+                    <img src="./portfolio/dance.jpg" alt="Balerina footwear and lace." class="projectImg">
+                    <div class="tileInfo info3">
+                        <h5 class="tileName">Bonnie's Dance Studio</h5>
+                        <p class="tileDescription">Coming Soon</p>
+                    </div>
+                </a>
+                <a class="project-tile tile4">
+                    <img src="./portfolio/guitar.jpg" alt="The front of a guitar." class="projectImg">
+                    <div class="tileInfo info4">
+                        <h5 class="tileName">Mark's Guitar Lessons</h5>
+                        <p class="tileDescription">Coming Soon</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="testimonials">
+            <header class="sectionHeader">
+                <h2 class="sectionTitle">Testimonials</h2>
+                <p class="sectionDescription">Hear a bit about my services from those I've worked with! One characteristic I've made a consious effort to adopt is to be open to coaching and even seek out correction. The more I journey down this path, the more humbling it is to realize how much there is to learn and how many great minds this world provides.</p>
+            </header>
+            <main class="sectionContent">
+                <div class="swiper">
+                    <div class="swiper-wrapper">   
+                        <div class="swiper-slide">
+                            <img src="testimonials/testimonials-1.jpg" alt="Profile picture of Bailey Garcia" class="testimonialImg">
+                            <h5 class="testimonialName">Bailey Garcia</h5>
+                            <h6 class="testimonialPosition">Owner & Founder</h6>
+                            <p class="testimonialQuote"><i class="fa-solid fa-quote-left quoteImg"></i>Aaron is dedicated and passionate about what he does! I love the simplicity of the website he made for my business. It's easy to navigate and user friendly.<i class="fa-solid fa-quote-right quoteImg"></i></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="testimonials/testimonials-2.jpg" alt="Profile picture of Mo Munnie" class="testimonialImg">
+                            <h5 class="testimonialName">Mo Munnie</h5>
+                            <h6 class="testimonialPosition">VP of eCommerce</h6>
+                            <p class="testimonialQuote"><i class="fa-solid fa-quote-left quoteImg"></i>There isn't anything Aaron cant' do once he sets his mind to it! He's a powerhouse driven by firey passion.<i class="fa-solid fa-quote-right quoteImg"></i></p>
+                        </div>                    
+                        <div class="swiper-slide">
+                            <img src="testimonials/testimonials-3.jpg" alt="Profile picture of Mai Vang" class="testimonialImg">
+                            <h5 class="testimonialName">Mai Vang</h5>
+                            <h6 class="testimonialPosition">Designer & developer</h6>
+                            <p class="testimonialQuote"><i class="fa-solid fa-quote-left quoteImg"></i>Professional and courtious. Working with Aaron has been an absolute pleasure. He's clever and has excellent time management.<i class="fa-solid fa-quote-right quoteImg"></i></p>
+                        </div>                    
+                        <div class="swiper-slide">
+                            <img src="testimonials/testimonials-4.jpg" alt="Profile picture of Paker Milner" class="testimonialImg">
+                            <h5 class="testimonialName">Parker Milner</h5>
+                            <h6 class="testimonialPosition">Principle Engineer</h6>
+                            <p class="testimonialQuote"><i class="fa-solid fa-quote-left quoteImg"></i>I only have good things to say about Aaron. He's hard working, open to suggestions, and always has a smile on his face.<i class="fa-solid fa-quote-right quoteImg"></i></p>
+                        </div>                    
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </main>
+        </section>
+        <section id="contact">
+            <header class="sectionHeader">
+                <h2 class="sectionTitle">Contact</h2>
+                <p class="sectionDescription">Feel free to reach out to me. I'd love to hear from you!</p>
+            </header>
+            <main class="sectionContent contactSection">
+                <div class="contactMethods">
+                    <div class="methodDiv">
+                        <a href="mailto:aaronegarcia1@gmail.com" class="detailLink contactLink">
+                        <h4 class="contactTitle"><i class="fa-solid fa-envelope"></i> Email</h4>
+                        aaronegarcia1@gmail</a>                    
+                    </div>
+                    <div class="methodDiv">
+                        <a href="tel:3852274287" class="detailLink contactLink">
+                        <h4 class="contactTitle"><i class="fa-solid fa-phone"></i> Phone</h4>
+                        (385) 227-4287</a>
+                    </div>
+                    <div class="methodDiv">
+                        <a href="#" class="detailLink contactLink">
+                        <h4 class="contactTitle"><i class="fa-solid fa-location-dot"></i> Location</h4>
+                        Salt Lake City, UT</a>
+                    </div>
+                </div>
+                <form action="submit" class="contactForm">
+                    <input class="input nameField" for="name" placeholder="Your Name" required>
+                    <input class="input emailField" type="email" for="email" placeholder="Your Email" required>
+                    <input class="input subjectField" type="text" for="subject" placeholder="Subject" required>
+                    <textarea class="input messageField" name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </main>
+        </section>
+    </div>
+    <footer id="pageFooter">
+        <p class="footerText">This website was made for educational purposes. The initial design was inspired by the Bootstrap template "MyResume v4.7.0". <br>The code however is completely original as a way to test my skills.<br> Visit <a href="https://freecodecamp.org" target="_blank">freeCodeCamp</a> to learn more.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>    
+</body>
+</html>

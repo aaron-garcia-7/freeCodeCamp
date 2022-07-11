@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9.8vh;
+  color: #313131;
+}
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.overflowHidden {
+  overflow-y: hidden;
+}
+#kindaNav {
+  position: fixed;
+  top: 0;
+  height: 8vh;
+  min-height: 3.2rem;
+  width: 100vw;
+  background: #fff;
+  padding: 0.4rem 4.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+#logoArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logoImg {
+  width: 2rem;
+  padding: 0.2rem;
+  margin-right: 1rem;
+}
+#navTitle {
+  border-left: 1px solid #313131;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+#searchBar {
+  background: #f3f3f3;
+  border: 1px solid #c0c0c000;
+  border-radius: 24px;
+  font-weight: 500;
+  transition: 0.4s ease;
+  padding: 0.6rem 1rem;
+  max-height: 2.6rem;
+}
+#searchBar:hover {
+  border: 1px solid #c0c0c040;
+}
+#searchBar:focus {
+  border: 1px solid #c0c0c0;
+  outline: none;
+}
+#navbar {
+  position: fixed;
+  top: 8vh;
+  left: 0;
+  height: 84vh;
+  width: 24rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#navbarHeader {
+  width: 100%;
+  padding-left: 3.9rem;
+  margin-bottom: 1rem;
+}
+#navHeader {
+  font-size: 1.4rem;
+}
+#navLinkList {
+  width: 100%;
+  list-style: none;
+  padding-left: 4rem;
+}
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #313131;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.6rem;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  top: 24%;
+  right: -48px;
+  padding: 0.2rem;
+  transform: rotate(45deg);
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+.nav-link:hover::after {
+  right: -16px;
+  opacity: 1;
+}
+#main-doc {
+  position: absolute;
+  top: 8vh;
+  left: 24rem;
+  padding: 1rem;
+  z-index: -1;
+}
+#pageTitle {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.main-section {
+  max-width: 42rem;
+  width: 96%;
+}
+.sectionTitle {
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+#demoImg {
+  width: 96%;
+  max-width: 36rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+#demoImg:focus {
+  border: 1px dashed black;
+  outline: none;
+}
+.section-ol {
+  list-style-position: outside;
+  padding-left: 1.6rem;
+  margin-bottom: 1rem;
+  line-height: 1.4rem;
+}
+li {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.noteDiv {
+  background: #f3f3f3;
+  border-radius: 12px;
+  padding: 1rem 2rem 0.6rem 3.2rem;
+  margin: 2rem 0rem;
+}
+.noteTitle {
+  display: flex;
+  align-items: center;
+  transform: translateX(-26px);
+  margin-bottom: 0.4rem;
+}
+.fa-info-circle {
+  color: #3e63e0;
+  font-size: 1.2rem;
+  padding-right: 0.4rem;
+}
+.noteWord {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.noteContent {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+}
+.noteLink,
+.textLink {
+  position: relative;
+  font-weight: 400;
+  color: #313131;
+  text-decoration: none;
+  border-bottom: 1px solid #313131;
+  transition: 0.3s ease;
+}
+.textLink {
+  font-weight: 300;
+}
+.noteLink:hover,
+.textLink:hover {
+  box-shadow: 0px 1px 0px #313131;
+}
+.section-ul {
+  list-style-position: outside;
+  padding-left: 1.6rem;
+  margin-bottom: 1rem;
+  line-height: 1.6rem;
+}
+.caution {
+  color: #fab01e;
+  font-size: 1.2rem;
+  padding-right: 0.4rem;
+}
+.warning {
+  color: #f9001d;
+  font-size: 1.2rem;
+  padding-right: 0.4rem;
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+#fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000000bb;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+}
+#fullscreen span {
+  /* border: 1px solid white; */
+  max-width: 96%;
+  width: 48rem;
+  padding: 0.6rem 0.2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+#fullscreenClose {
+  color: #c0c0c0;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+#fullscreenClose:hover {
+  color: #f3f3f3;
+}
+#fullscreenImg {
+  max-width: 96%;
+  width: 48rem;
+  box-shadow: 0px 0px 8px #000000bb;
+  cursor: default;
+}
+
+.bottomPaddingDiv {
+  height: 8vh;
+}
+
+#navfooter {
+  display: none;
+  pointer-events: none;
+}
+
+#pageFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 8vh;
+  min-height: 3.2rem;
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+}
+#footerSpacer {
+  width: 24rem;
+}
+#footerText {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 868px) {
+  * {
+    scroll-padding-top: 14vh;
+  }
+  #kindaNav {
+    flex-direction: column;
+    align-items: unset;
+    height: 12vh;
+  }
+  /* #searchBar {
+    width: 12rem;
+  } */
+  #navbar {
+    display: none;
+    pointer-events: none;
+  }
+  #main-doc {
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    width: 100vw;
+    max-width: 100vw;
+    z-index: -1;
+    /* look above, there may be an extra z-index */
+  }
+  .main-section {
+    max-width: 96vw;
+    width: 100%;
+  }
+  /* .bottomPaddingDiv {
+    display: none;
+  } */
+  #navfooter {
+    display: block;
+    pointer-events: all;
+    border-top: 1px solid #c0c0c040;
+    padding-top: 1rem;
+  }
+  #navfooterHeader {
+    margin-bottom: 0.6rem;
+  }
+  #navfooterH3 {
+    font-size: 1.6rem;
+  }
+  #navfooterLinkList {
+    list-style: none;
+  }
+  #pageFooter {
+    padding-bottom: 0.6rem;
+  }
+  #footerSpacer {
+    width: 0rem;
+  }
+  #footerText {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0rem;
+    padding: 0.6rem;
+  }
+}

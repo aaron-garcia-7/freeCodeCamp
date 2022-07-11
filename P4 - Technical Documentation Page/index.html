@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page | freeCodeCamp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <nav id="kindaNav">
+        <div id="logoArea">
+            <img src="./images/Tesla_Logo.svg" id="logoImg" alt="">
+            <h1 id="navTitle">Model S Owner's Manual</h1>
+        </div>
+        <input type="search" id="searchBar" placeholder="Search">
+    </nav>
+    <nav id="navbar">
+        <header id="navbarHeader">
+            <h3 id="navHeader">Menu</h3>
+        </header>
+        <ul id="navLinkList">
+            <li><a class="nav-link" href="#How_It_Works">How It Works</a></li>
+            <li><a class="nav-link" href="#Active_Safety_Features">Active Safety Features</a></li>
+            <li><a class="nav-link" href="#Autopilot_Features">Autopilot Features</a></li>
+            <li><a class="nav-link" href="#Drive_to_Calibrate_Cameras">Drive to Calibrate Cameras</a></li>
+            <li><a class="nav-link" href="#Limitations">Limitations</a></li>
+            <li><a class="nav-link" href="#Cleaning_Cameras_and_Sensors">Cleaning Cameras and Sensors</a></li>
+        </ul>
+    </nav>
+
+    <div id="fullscreen" class="hidden">
+        <span>
+            <i class="fa-solid fa-xmark" id="fullscreenClose"></i>
+        </span>
+        <img src="./images/tesla_img_full.png" id="fullscreenImg" class="fullscreenImg" alt="Image depicting camera locations on Model S." tabindex="1">
+    </div>
+
+    <main id="main-doc">
+        <header id="mainHeader">
+            <h1 id="pageTitle">About Autopilot</h1>
+        </header>
+        <section class="main-section">
+            <header class="section-header" id="How_It_Works">
+                <h2 class="sectionTitle">How It Works</h2>
+            </header>
+            <p>Your Model S includes the following components that actively monitor the surrounding area:</p>
+            <img src="./images/tesla_img.png" id="demoImg" alt="Image depicting camera locations on Model S." tabindex="1">
+            <ol class="section-ol">
+                <li>A camera is mounted above the rear license plate.</li>
+                <li>Ultrasonic sensors are located in the front and rear bumpers.</li>
+                <li>A camera is mounted in each door pillar.</li>
+                <li>Three cameras are mounted to the windshield above the rear view mirror.</li>
+                <li>A camera is mounted to each front fender.</li>
+                <li>Radar is mounted behind the front bumper.</li>
+            </ol>
+            <p>Model S is also equipped with high precision electronically-assisted braking and steering systems.</p>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-info-circle"></i><span class="noteWord">Note</span></h5>
+                <p class="noteContent">Ensure all cameras and sensors are clean before each drive. See <a href="#Cleaning_Cameras_and_Sensors" class="noteLink">Cleaning Cameras and Sensors</a> for more information. Dirty cameras and sensors, as well as environmental conditions such as rain and faded lane markings, can affect Autopilot performance.</p>
+            </div>
+        </section>
+        <section class="main-section">
+            <header class="section-header" id="Active_Safety_Features">
+                <h2 class="sectionTitle">Active Safety Features</h2>
+            </header>
+            <p>These Active Safety features are designed to increase your safety:</p>
+            <ul class="section-ul">
+                <li>Lane Assist (see <a href="https://www.tesla.com/ownersmanual/models/en_us/GUID-ADA05DFF-963D-477D-9A51-FA8C8F6429F1.html" class="noteLink" target="_blank">Lane Assist</a>)</li>
+                <li>Collision Avoidance Assist (see <a href="https://www.tesla.com/ownersmanual/models/en_us/GUID-8EA7EF10-7D27-42AC-A31A-96BCE5BC0A85.html" class="noteLink" target="_blank">Collision Avoidance Assist</a>)</li>
+                <li>Speed Assist (see <a href="https://www.tesla.com/ownersmanual/models/en_us/GUID-5D3D4014-4E98-45D7-8BBC-F76BCA9CEC05.html" class="noteLink" target="_blank">Speed Assist</a>)</li>
+            </ul>
+            <p>You can enable/disable some of these features and in some cases, control how they work. To access settings for these features, touch <span style="font-weight: 500;">Controls &gt; Autopilot</span>.</p>
+        </section>
+        <section class="main-section">
+            <header class="section-header" id="Autopilot_Features">
+                <h2 class="sectionTitle">Autopilot Features</h2>
+            </header>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-info-circle"></i><span class="noteWord">Note</span></h5>
+                <p class="noteContent"><em>Depending on market region, vehicle configuration, options purchased, and software version, your vehicle may not be equipped with all features listed below, or a feature may not operate exactly as described.</em></p>
+            </div>
+            <p>These Autopilot convenience features are designed to reduce driver workload:</p>
+            <ul class="section-ul">
+                <li>Traffic-Aware Cruise Control (see <a href="" class="noteLink" target="_blank">Traffic-Aware Cruise Control</a>)</li>
+                <li>Autosteer (see <a href="" class="noteLink" target="_blank">Autosteer</a>)</li>
+                <li>Auto Lane Change (see <a href="" class="noteLink" target="_blank">Auto Lane Change</a>)</li>
+                <li>Autopark (see <a href="" class="noteLink" target="_blank">Autopark</a>)</li>
+                <li>Summon (see <a href="" class="noteLink" target="_blank">Summon</a>)</li>
+                <li>Stop Light and Stop Sign Warning (see <a href="" class="noteLink" target="_blank">Stop Light and Stop Sign Warning</a>)</li>
+                <li>Navigate on Autopilot (see <a href="" class="noteLink" target="_blank">Navigate on Autopilot</a>)</li>
+                <li>Traffic Light and Stop Sign Control (see <a href="" class="noteLink" target="_blank">Traffic Light and Stop Sign Control</a>)</li>
+            </ul>
+            <p>You can enable/disable some of these features and in some cases, control how they work. To access settings for these features, touch <span style="font-weight: 500;">Controls &gt; Autopilot</span>.</p>
+        </section>
+        <section class="main-section">
+            <header class="section-header" id="Drive_to_Calibrate_Cameras">
+                <h2 class="sectionTitle">Drive to Calibrate Cameras</h2>
+            </header>
+            <p>Model S must maneuver with precision when Autopilot features are being used. Therefore, before some features can be used for the first time or after some types of service repairs, cameras must complete a self-calibration process. For your convenience, the instrument panel displays a progress indicator.</p>
+            <p>When calibration is complete, Autopilot features are available for use. Calibration typically completes after driving 20-25 miles (32-40 km), but the distance varies depending on road and environmental conditions. For example, calibration completes quicker when driving on a straight road with multiple lanes, such as a freeway or highway, with highly-visible lane markings (in the driving lane as well as the adjacent lanes). Contact Tesla only if your Model S has not completed the calibration process after driving 100 miles (160 km) in the described conditions.</p>
+            <p>If a camera has shifted from its calibrated position (for example, the camera or windshield was replaced), you must clear the calibration. To do so, touch Controls > Service > Camera Calibration > Clear Calibration. When the calibration is cleared, Model S repeats the calibration process. While this helps re-calibrate the cameras in many cases, Clear Calibration may not resolve all camera and sensor concerns.</p>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-info-circle"></i><span class="noteWord">Note</span></h5>
+                <p class="noteContent">The self-calibration drive process is only applicable to Model S vehicles built after approximately October 12, 2016.</p>
+            </div>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-info-circle"></i><span class="noteWord">Note</span></h5>
+                <p class="noteContent">To calibrate, cameras require highly-visible lane markings in both the driving lane and adjacent lanes (at least two lanes over on each side of the vehicle). For best results, drive in the middle lane of a freeway or highway (ideally with at least five lanes) that has clear lane markings and minimal traffic.</p>
+            </div>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-info-circle"></i><span class="noteWord">Note</span></h5>
+                <p class="noteContent">If you attempt to use a feature that is not available until the calibration process is complete, the feature is disabled and the instrument panel displays a message.</p>
+            </div>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-info-circle"></i><span class="noteWord">Note</span></h5>
+                <p class="noteContent">Model S must repeat the calibration process if the cameras are serviced by Tesla, and in some cases, after a software update.</p>
+            </div>
+        </section>
+        <section class="main-section">
+            <header class="section-header" id="Limitations">
+                <h2 class="sectionTitle">Limitations</h2>
+            </header>
+            <p>Many factors can impact the performance of Autopilot components, causing them to be unable to function as intended. These include (but are not limited to):</p>
+            <ul class="section-ul">
+                <li>Poor visibility (due to heavy rain, snow, fog, etc.).</li>
+                <li>Bright light (due to oncoming headlights, direct sunlight, etc.).</li>
+                <li>Damage or obstructions caused by mud, ice snow, etc.</li>
+                <li>Interference or obstruction by object(s) mounted onto the vehicle (such as a bike rack).</li>
+                <li>Obstruction caused by applying excessive paint or adhesive products (such as wraps, stickers, rubber coating, etc.) onto the vehicle.</li>
+                <li>Narrow or winding roads.</li>
+                <li>A damaged or misaligned body panel.</li>
+                <li>Use of gray or aftermarket glass.</li>
+                <li>Interference from other equipment that generates ultrasonic waves.</li>
+                <li>Extremely hot or cold temperatures.</li>
+            </ul>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-exclamation-triangle caution"></i><span class="noteWord">CAUTION</span></h5>
+                <p class="noteContent">If a windshield replacement is needed, take your vehicle to Tesla Service. This ensures appropriate handling and mounting of the camera(s). Failure to do so can cause one or more Autopilot features to malfunction.</p>
+            </div>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-exclamation-triangle warning"></i><span class="noteWord">Warning</span></h5>
+                <p class="noteContent">The list above does not represent an exhaustive list of situations that may interfere with proper operation of Autopilot components. Never depend on these components to keep you safe. It is the driver's responsibility to stay alert, drive safely, and be in control of the vehicle at all times.</p>
+            </div>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-exclamation-triangle warning"></i><span class="noteWord">Warning</span></h5>
+                <p class="noteContent">Advanced safety features may not be available during the calibration period.</p>
+            </div>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-exclamation-triangle warning"></i><span class="noteWord">Warning</span></h5>
+                <p class="noteContent">Re-calibrating the cameras or sensors on the touchscreen is not a substitute for checking the physical positioning and condition of these components. Walk around your vehicle and inspect the cameras and sensors for physical damage. Incorrectly calibrated or positioned cameras and sensors may limit or disable the use of safety features. Contact Tesla if you suspect lingering issues.</p>
+            </div>
+        </section>
+        <section class="main-section">
+            <header class="section-header" id="Cleaning_Cameras_and_Sensors">
+                <h2 class="sectionTitle">Cleaning Cameras and Sensors</h2>
+            </header>
+            <p>To ensure the various Autopilot components can provide information that is as accurate as possible, keep them clean and free of obstructions, condensation, or damage (see <a href="" class="noteLink textLink">Cleaning</a>).</p>
+            <p>Condensation can form inside the camera enclosures, especially if you park your vehicle outside in cold or wet conditions. The instrument cluster may display an alert stating that a camera is blocked and that some or all Autopilot features may be temporarily restricted until the camera vision is clear. To proactively dry the condensation, precondition the cabin by setting it to a warm temperature, turning the windshield defroster on, and directing the front air vents toward the door pillars (see <a href="" class="noteLink textLink">Mobile App</a>).</p>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-exclamation-triangle caution"></i><span class="noteWord">CAUTION</span></h5>
+                <p class="noteContent">Do not wipe an exposed lens with your hands or a cloth in an attempt to remove dirt or debris. The debris can damage the surface of the lens when wiped.</p>
+            </div>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-exclamation-triangle caution"></i><span class="noteWord">CAUTION</span></h5>
+                <p class="noteContent">Do not use chemical-based or abrasive cleaners. Doing so can damage surfaces.</p>
+            </div>
+            <div class="noteDiv">
+                <h5 class="noteTitle"><i class="fas fa-exclamation-triangle caution"></i><span class="noteWord">CAUTION</span></h5>
+                <p class="noteContent">Do not clean an ultrasonic sensor or camera lens with a sharp or abrasive object that can scratch or damage its surface.</p>
+            </div>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+        </section>
+
+        <nav id="navfooter">
+            <header id="navfooterHeader">
+                <h3 id="navfooterH3">Menu</h3>
+            </header>
+            <ul id="navfooterLinkList">
+                <li><a class="nav-link" href="#How_It_Works">How It Works</a></li>
+                <li><a class="nav-link" href="#Active_Safety_Features">Active Safety Features</a></li>
+                <li><a class="nav-link" href="#Autopilot_Features">Autopilot Features</a></li>
+                <li><a class="nav-link" href="#Drive_to_Calibrate_Cameras">Drive to Calibrate Cameras</a></li>
+                <li><a class="nav-link" href="#Limitations">Limitations</a></li>
+                <li><a class="nav-link" href="#Cleaning_Cameras_and_Sensors">Cleaning Cameras and Sensors</a></li>
+            </ul>
+        </nav>
+
+        <div class="bottomPaddingDiv"></div>
+
+    </main>
+
+    <footer id="pageFooter">
+        <div id="footerSpacer"></div>
+        <div id="footerText">
+            <h6>This page was made for educational purposes only. Page created & replicated by Aaron Garcia. <br>Content owned by &copy; Tesla, Inc. All text and images from <a href="https://www.tesla.com/ownersmanual/models/en_us/GUID-EDA77281-42DC-4618-98A9-CC62378E0EC2.html" target="_blank" class="noteLink">tesla.com.</a></h6>
+            <h6>Visit <a href="https://www.freecodecamp.org/learn/" target="_blank" class="noteLink">freeCodeCamp</a> to learn more.</h6>
+        </div>
+    </footer>
+</body>
+</html>
